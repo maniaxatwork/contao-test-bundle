@@ -4,7 +4,7 @@ declare(strict_types=1);
 
 /*
  * This file is part of contao-test-bundle.
- * 
+ *
  * (c) Stephan Buder 2022 <stephan@maniax-at-work.de>
  * @license GPL-3.0-or-later
  * For the full copyright and license information,
@@ -167,6 +167,14 @@ $GLOBALS['TL_DCA']['tl_mx_test'] = array(
  */
 class tl_mx_test extends Backend
 {
+    /**
+     * tl_mx_text constructor.
+     */
+    public function __construct()
+    {
+        parent::__construct();
+    }
+
     /**
      * @param $arrButtons
      * @param  DC_Table $dc
