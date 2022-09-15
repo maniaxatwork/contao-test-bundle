@@ -1,0 +1,22 @@
+services:
+
+    # Contao frontend module Maniaxatwork\ContaoTestBundle\Controller\FrontendModule\TestFeModuleController
+    # We used annotations for tagging the frontend module category, the frontend module type and the frontend module template
+    Maniaxatwork\ContaoTestBundle\Controller\FrontendModule\TestFeModuleController:
+        tags:
+            - { name: container.service_subscriber }
+        public: true
+        # Since Symfony 5 the container has to be set manually
+        calls:
+            - [ setContainer, [ '@Psr\Container\ContainerInterface' ] ]
+    
+    # Contao content element Maniaxatwork\ContaoTestBundle\Controller\ContentElement\TestCeModuleController
+    # We used annotations for tagging the frontend element category, the frontend element type and the frontend element template
+    Maniaxatwork\ContaoTestBundle\Controller\ContentElement\TestCeModuleController:
+        tags:
+            - { name: container.service_subscriber }
+        public: true
+        # Since Symfony 5 the container has to be set manually
+        calls:
+            - [ setContainer, [ '@Psr\Container\ContainerInterface' ] ]
+

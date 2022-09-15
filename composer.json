@@ -1,0 +1,52 @@
+{
+    "name": "maniaxatwork/contao-test-bundle",
+    "description": "Das ist mal wieder ein Test",
+    "keywords": [
+        "contao",
+        "bundle",
+        "tag 3",
+        "tag 4"
+    ],
+    "type": "contao-bundle",
+    "license": "GPL-3.0-or-later",
+    "authors": [
+        {
+            "name": "Stephan Buder",
+            "email": "stephan@maniax-at-work.de",
+            "homepage": "https://www.maniax-at-work.de",
+            "role": "Developer"
+        }
+    ],
+    "support": {
+        "issues": "https://github.com/maniaxatwork/contao-test-bundle/issues",
+        "source": "https://github.com/maniaxatwork/contao-test-bundle"
+    },
+    "require": {
+        "contao/core-bundle": "^4.9"
+    },
+    "require-dev": {
+        "contao/manager-plugin": "^2.3.1",
+        "contao/test-case": "^4.5",
+        "phpunit/phpunit": "^9.3",
+        "symfony/http-client": "5.4.*",
+        "symfony/phpunit-bridge": "^5.4",
+        "contao/easy-coding-standard": "^3.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Maniaxatwork\\ContaoTestBundle\\": "src/"
+        },
+        "classmap": [
+            "src/Resources/contao"
+        ],
+        "exclude-from-classmap": [
+            "src/Resources/contao/config",
+            "src/Resources/contao/dca",
+            "src/Resources/contao/languages",
+            "src/Resources/contao/templates"
+        ]
+    },
+    "extra": {
+        "contao-manager-plugin": "Maniaxatwork\\ContaoTestBundle\\ContaoManager\\Plugin"
+    }
+}
