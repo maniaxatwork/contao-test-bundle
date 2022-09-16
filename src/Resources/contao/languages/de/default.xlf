@@ -1,0 +1,46 @@
+<?xml version="1.0" ?><xliff version="1.1">
+  <file datatype="php" original="src/Resources/contao/languages/en/default.php" source-language="en" target-language="de">
+    <body>
+      <trans-unit id="MSC.open">
+        <source>Read more on %s</source>
+        <target>Weiterlesen auf %s</target>
+      </trans-unit>
+      <trans-unit id="MSC.author">
+        <source>Author</source>
+        <target>Autor</target>
+      </trans-unit>
+      <trans-unit id="MSC.by">
+        <source>by</source>
+        <target>von</target>
+      </trans-unit>
+      <trans-unit id="MSC.empty">
+        <source>There are no jobs items for this period.</source>
+        <target>Keine Stellenangebote in diesem Zeitraum vorhanden.</target>
+      </trans-unit>
+      <trans-unit id="MSC.emptyList">
+        <source>Currently there are no jobs items.</source>
+        <target>Zurzeit sind keine Stellenangebote vorhanden.</target>
+      </trans-unit>
+      <trans-unit id="MSC.jobs_items">
+        <source>%d item(s)</source>
+        <target>%d Artikel</target>
+      </trans-unit>
+      <trans-unit id="MSC.jobs_previous">
+        <source>&amp;lt;</source>
+        <target>&amp;lt;</target>
+      </trans-unit>
+      <trans-unit id="MSC.jobs_next">
+        <source>&amp;gt;</source>
+        <target>&amp;gt;</target>
+      </trans-unit>
+      <trans-unit id="MSC.jobsPicker">
+        <source>Jobs</source>
+        <target>Stellenangebote</target>
+      </trans-unit>
+      <trans-unit id="MSC.jobsOverview">
+        <source>Back to the jobs overview</source>
+        <target>Zurück zur Übersicht</target>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>

@@ -1,0 +1,216 @@
+<?xml version="1.0" ?><xliff version="1.1">
+  <file datatype="php" original="src/Resources/contao/languages/en/tl_jobs.php" source-language="en" target-language="de">
+    <body>
+      <trans-unit id="tl_jobs.headline.0">
+        <source>Title</source>
+      </trans-unit>
+      <trans-unit id="tl_jobs.headline.1">
+        <source>Please enter the jobs title.</source>
+      </trans-unit>
+      <trans-unit id="tl_jobs.alias.0">
+        <source>Jobs alias</source>
+      </trans-unit>
+      <trans-unit id="tl_jobs.alias.1">
+        <source>The jobs alias is a unique reference to the jobs item which can be called instead of its numeric ID.</source>
+      </trans-unit>
+      <trans-unit id="tl_jobs.author.0">
+        <source>Author</source>
+      </trans-unit>
+      <trans-unit id="tl_jobs.author.1">
+        <source>Here you can change the author of the jobs item.</source>
+      </trans-unit>
+      <trans-unit id="tl_jobs.date.0">
+        <source>Date</source>
+      </trans-unit>
+      <trans-unit id="tl_jobs.date.1">
+        <source>Please enter the date according to the global date format.</source>
+      </trans-unit>
+      <trans-unit id="tl_jobs.time.0">
+        <source>Time</source>
+      </trans-unit>
+      <trans-unit id="tl_jobs.time.1">
+        <source>Please enter the time according to the global time format.</source>
+      </trans-unit>
+      <trans-unit id="tl_jobs.pageTitle.0">
+        <source>Meta title</source>
+      </trans-unit>
+      <trans-unit id="tl_jobs.pageTitle.1">
+        <source>Here you can add a custom meta title to overwrite the default page title.</source>
+      </trans-unit>
+      <trans-unit id="tl_jobs.robots.0">
+        <source>Robots tag</source>
+      </trans-unit>
+      <trans-unit id="tl_jobs.robots.1">
+        <source>Here you can overwrite how search engines handle the jobs item.</source>
+      </trans-unit>
+      <trans-unit id="tl_jobs.description.0">
+        <source>Meta description</source>
+      </trans-unit>
+      <trans-unit id="tl_jobs.description.1">
+        <source>Here you can add a custom meta description to overwrite the default page description.</source>
+      </trans-unit>
+      <trans-unit id="tl_jobs.subheadline.0">
+        <source>Subheadline</source>
+      </trans-unit>
+      <trans-unit id="tl_jobs.subheadline.1">
+        <source>Here you can enter a subheadline.</source>
+      </trans-unit>
+      <trans-unit id="tl_jobs.teaser.0">
+        <source>Jobs teaser</source>
+      </trans-unit>
+      <trans-unit id="tl_jobs.teaser.1">
+        <source>The jobs teaser can be shown in a jobs list instead of the full story. A &quot;read more …&quot; link will be added automatically.</source>
+      </trans-unit>
+      <trans-unit id="tl_jobs.text.0">
+        <source>Jobs text</source>
+      </trans-unit>
+      <trans-unit id="tl_jobs.text.1">
+        <source>Here you can enter the jobs text.</source>
+      </trans-unit>
+      <trans-unit id="tl_jobs.addImage.0">
+        <source>Add an image</source>
+      </trans-unit>
+      <trans-unit id="tl_jobs.addImage.1">
+        <source>Add an image to the jobs item.</source>
+      </trans-unit>
+      <trans-unit id="tl_jobs.addEnclosure.0">
+        <source>Add enclosures</source>
+      </trans-unit>
+      <trans-unit id="tl_jobs.addEnclosure.1">
+        <source>Add one or more downloadable files to the jobs item.</source>
+      </trans-unit>
+      <trans-unit id="tl_jobs.enclosure.0">
+        <source>Enclosures</source>
+      </trans-unit>
+      <trans-unit id="tl_jobs.enclosure.1">
+        <source>Please choose the files you want to attach.</source>
+      </trans-unit>
+      <trans-unit id="tl_jobs.source.0">
+        <source>Redirect target</source>
+      </trans-unit>
+      <trans-unit id="tl_jobs.source.1">
+        <source>Here you can override the default redirect target.</source>
+      </trans-unit>
+      <trans-unit id="tl_jobs.default.0">
+        <source>Use default</source>
+      </trans-unit>
+      <trans-unit id="tl_jobs.default.1">
+        <source>By clicking the &quot;read more …&quot; button, visitors will be redirected to the default page of the jobs archive.</source>
+      </trans-unit>
+      <trans-unit id="tl_jobs.internal.0">
+        <source>Page</source>
+      </trans-unit>
+      <trans-unit id="tl_jobs.internal.1">
+        <source>By clicking the &quot;read more …&quot; button, visitors will be redirected to a page.</source>
+      </trans-unit>
+      <trans-unit id="tl_jobs.jumpTo.0">
+        <source>Redirect page</source>
+      </trans-unit>
+      <trans-unit id="tl_jobs.jumpTo.1">
+        <source>Please choose the page to which visitors will be redirected when clicking the jobs item.</source>
+      </trans-unit>
+      <trans-unit id="tl_jobs.cssClass.0">
+        <source>CSS class</source>
+      </trans-unit>
+      <trans-unit id="tl_jobs.cssClass.1">
+        <source>Here you can enter one or more classes.</source>
+      </trans-unit>
+      <trans-unit id="tl_jobs.featured.0">
+        <source>Feature item</source>
+      </trans-unit>
+      <trans-unit id="tl_jobs.featured.1">
+        <source>Show the jobs item in a featured jobs list.</source>
+      </trans-unit>
+      <trans-unit id="tl_jobs.published.0">
+        <source>Publish item</source>
+      </trans-unit>
+      <trans-unit id="tl_jobs.published.1">
+        <source>Make the jobs item publicly visible on the website.</source>
+      </trans-unit>
+      <trans-unit id="tl_jobs.start.0">
+        <source>Show from</source>
+      </trans-unit>
+      <trans-unit id="tl_jobs.start.1">
+        <source>If you want to prevent the jobs item from showing on the website before a certain date/time, you can enter it here. Otherwise leave the field blank.</source>
+      </trans-unit>
+      <trans-unit id="tl_jobs.stop.0">
+        <source>Show until</source>
+      </trans-unit>
+      <trans-unit id="tl_jobs.stop.1">
+        <source>If you want to prevent the jobs item from showing on the website after a certain date/time, you can enter it here. Otherwise leave the field blank.</source>
+      </trans-unit>
+      <trans-unit id="tl_jobs.tstamp.0">
+        <source>Revision date</source>
+      </trans-unit>
+      <trans-unit id="tl_jobs.tstamp.1">
+        <source>Date and time of the latest revision</source>
+      </trans-unit>
+      <trans-unit id="tl_jobs.title_legend">
+        <source>Title and author</source>
+      </trans-unit>
+      <trans-unit id="tl_jobs.date_legend">
+        <source>Date and time</source>
+      </trans-unit>
+      <trans-unit id="tl_jobs.teaser_legend">
+        <source>Subheadline and teaser</source>
+      </trans-unit>
+      <trans-unit id="tl_jobs.text_legend">
+        <source>Jobs text</source>
+      </trans-unit>
+      <trans-unit id="tl_jobs.image_legend">
+        <source>Image settings</source>
+      </trans-unit>
+      <trans-unit id="tl_jobs.enclosure_legend">
+        <source>Enclosures</source>
+      </trans-unit>
+      <trans-unit id="tl_jobs.source_legend">
+        <source>Redirect target</source>
+      </trans-unit>
+      <trans-unit id="tl_jobs.meta_legend">
+        <source>Metadata</source>
+      </trans-unit>
+      <trans-unit id="tl_jobs.expert_legend">
+        <source>Expert settings</source>
+      </trans-unit>
+      <trans-unit id="tl_jobs.publish_legend">
+        <source>Publish settings</source>
+      </trans-unit>
+      <trans-unit id="tl_jobs.new.0">
+        <source>New</source>
+      </trans-unit>
+      <trans-unit id="tl_jobs.new.1">
+        <source>Create a new jobs item</source>
+      </trans-unit>
+      <trans-unit id="tl_jobs.show">
+        <source>Show the details of jobs item ID %s</source>
+      </trans-unit>
+      <trans-unit id="tl_jobs.edit">
+        <source>Edit jobs item ID %s</source>
+      </trans-unit>
+      <trans-unit id="tl_jobs.copy">
+        <source>Duplicate jobs item ID %s</source>
+      </trans-unit>
+      <trans-unit id="tl_jobs.cut">
+        <source>Move jobs item ID %s</source>
+      </trans-unit>
+      <trans-unit id="tl_jobs.delete">
+        <source>Delete jobs item ID %s</source>
+      </trans-unit>
+      <trans-unit id="tl_jobs.toggle">
+        <source>Publish/unpublish jobs item ID %s</source>
+      </trans-unit>
+      <trans-unit id="tl_jobs.feature">
+        <source>Feature/unfeature jobs item ID %s</source>
+      </trans-unit>
+      <trans-unit id="tl_jobs.editheader">
+        <source>Edit the settings of jobs item ID %s</source>
+      </trans-unit>
+      <trans-unit id="tl_jobs.pasteafter.0">
+        <source>Paste into this jobs archive</source>
+      </trans-unit>
+      <trans-unit id="tl_jobs.editmeta">
+        <source>Edit the jobs item settings</source>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>

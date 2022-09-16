@@ -1,54 +1,37 @@
 <?php
 
 /*
- * This file is part of contao-test-bundle.
- * 
+ * This file is part of contao-jobs-bundle.
+ *
  * (c) Stephan Buder 2022 <stephan@maniax-at-work.de>
  * @license GPL-3.0-or-later
  * For the full copyright and license information,
  * please view the LICENSE file that was distributed with this source code.
- * @link https://github.com/maniaxatwork/contao-test-bundle
+ * @link https://github.com/maniaxatwork/contao-jobs-bundle
  */
 declare(strict_types=1);
 
-namespace Maniaxatwork\ContaoTestBundle\Tests\ContaoManager;
+namespace ManiaxAtWork\ContaoJobsBundle\Tests\ContaoManager;
 
 use Contao\CoreBundle\ContaoCoreBundle;
 use Contao\ManagerPlugin\Bundle\Config\BundleConfig;
-use Contao\ManagerPlugin\Bundle\Parser\DelegatingParser;
-use Contao\TestCase\ContaoTestCase;
-use Maniaxatwork\ContaoTestBundle\ContaoManager\Plugin;
-use Maniaxatwork\ContaoTestBundle\ManiaxatworkContaoTestBundle;
+use Contao\ManagerPlugin\Bundle\Parser\ParserInterface;
+use ManiaxAtWork\ContaoJobsBundle\ContaoManager\Plugin;
+use ManiaxAtWork\ContaoJobsBundle\ContaoJobsBundle;
+use PHPUnit\Framework\TestCase;
 
-/**
- * Class PluginTest
- *
- * @package Maniaxatwork\ContaoTestBundle\Tests\ContaoManager
- */
-class PluginTest extends ContaoTestCase
+class PluginTest extends TestCase
 {
-    /**
-     * Test Contao manager plugin class instantiation
-     */
-    public function testInstantiation(): void
+    public function testReturnsTheBundles(): void
     {
-        $this->assertInstanceOf(Plugin::class, new Plugin());
+        $parser = $this->createMock(ParserInterface::class);
+
+        /** @var BundleConfig $config */
+        $config = (new Plugin())->getBundles($parser)[0];
+
+        $this->assertInstanceOf(BundleConfig::class, $config);
+        $this->assertSame(ContaoJobsBundle::class, $config->getName());
+        $this->assertSame([ContaoCoreBundle::class], $config->getLoadAfter());
+        $this->assertSame(['jobs'], $config->getReplace());
     }
-
-    /**
-     * Test returns the bundles
-     */
-    public function testGetBundles(): void
-    {
-        $plugin = new Plugin();
-
-        /** @var array $bundles */
-        $bundles = $plugin->getBundles(new DelegatingParser());
-
-        $this->assertCount(1, $bundles);
-        $this->assertInstanceOf(BundleConfig::class, $bundles[0]);
-        $this->assertSame(ManiaxatworkContaoTestBundle::class, $bundles[0]->getName());
-        $this->assertSame([ContaoCoreBundle::class], $bundles[0]->getLoadAfter());
-    }
-
 }

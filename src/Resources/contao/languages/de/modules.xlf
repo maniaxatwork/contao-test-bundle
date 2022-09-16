@@ -1,0 +1,50 @@
+<?xml version="1.0" ?><xliff version="1.1">
+  <file datatype="php" original="src/Resources/contao/languages/en/modules.php" source-language="en" target-language="de">
+    <body>
+      <trans-unit id="MOD.jobs.0">
+        <source>Jobs</source>
+        <target>Stellenangebote</target>
+      </trans-unit>
+      <trans-unit id="MOD.tl_jobs">
+        <source>Items</source>
+        <target>Beiträge</target>
+      </trans-unit>
+      <trans-unit id="FMD.jobs">
+        <source>Jobs</source>
+        <target>Stellenangebote</target>
+      </trans-unit>
+      <trans-unit id="FMD.jobslist.0">
+        <source>Jobslist</source>
+        <target>Stellenangebotsliste</target>
+      </trans-unit>
+      <trans-unit id="FMD.jobslist.1">
+        <source>Adds a list of jobs items to the page</source>
+        <target>Fügt der Seite eine Stellenangebotsliste hinzu</target>
+      </trans-unit>
+      <trans-unit id="FMD.jobsreader.0">
+        <source>Jobsreader</source>
+        <target>Stellenangebotsleser</target>
+      </trans-unit>
+      <trans-unit id="FMD.jobsreader.1">
+        <source>Shows the details of a jobs item</source>
+        <target>Stellt ein einzelnes Stellenangebot dar</target>
+      </trans-unit>
+      <trans-unit id="FMD.jobsarchive.0">
+        <source>Jobs archive</source>
+        <target>Stellenangebotarchiv</target>
+      </trans-unit>
+      <trans-unit id="FMD.jobsarchive.1">
+        <source>Adds a jobs archive to the page</source>
+        <target>Fügt der Seite ein Stellenangebotarchiv hinzu</target>
+      </trans-unit>
+      <trans-unit id="FMD.jobsmenu.0">
+        <source>Jobs archive menu</source>
+        <target>Stellenangebotarchiv-Menü</target>
+      </trans-unit>
+      <trans-unit id="FMD.jobsmenu.1">
+        <source>Generates a navigation menu to browse the jobs archive</source>
+        <target>Erzeugt ein Menü zur Navigation des Stellenangebotarchivs</target>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>

@@ -1,0 +1,26 @@
+<?xml version="1.0" ?><xliff version="1.1">
+  <file datatype="php" original="src/Resources/contao/languages/en/tl_user.php" source-language="en" target-language="de">
+    <body>
+      <trans-unit id="tl_user.jobs.0">
+        <source>Allowed archives</source>
+        <target>Erlaubte Archive</target>
+      </trans-unit>
+      <trans-unit id="tl_user.jobs.1">
+        <source>Here you can grant access to one or more jobs archives.</source>
+        <target>Hier können Sie den Zugriff auf ein oder mehrere Stellenangebots-Archive erlauben.</target>
+      </trans-unit>
+      <trans-unit id="tl_user.newp.0">
+        <source>Jobs archive permissions</source>
+        <target>Archivrechte</target>
+      </trans-unit>
+      <trans-unit id="tl_user.newp.1">
+        <source>Here you can define the jobs archive permissions.</source>
+        <target>Hier können Sie die Berechtigungen für das Stellenangebotsarchiv festlegen.</target>
+      </trans-unit>
+      <trans-unit id="tl_user.jobs_legend">
+        <source>Jobs permissions</source>
+        <target>Archivrechte</target>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>

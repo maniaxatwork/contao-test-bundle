@@ -1,22 +1,47 @@
 services:
+    _defaults:
+        autoconfigure: true
 
-    # Contao frontend module Maniaxatwork\ContaoTestBundle\Controller\FrontendModule\TestFeModuleController
-    # We used annotations for tagging the frontend module category, the frontend module type and the frontend module template
-    Maniaxatwork\ContaoTestBundle\Controller\FrontendModule\TestFeModuleController:
-        tags:
-            - { name: container.service_subscriber }
-        public: true
-        # Since Symfony 5 the container has to be set manually
-        calls:
-            - [ setContainer, [ '@Psr\Container\ContainerInterface' ] ]
-    
-    # Contao content element Maniaxatwork\ContaoTestBundle\Controller\ContentElement\TestCeModuleController
-    # We used annotations for tagging the frontend element category, the frontend element type and the frontend element template
-    Maniaxatwork\ContaoTestBundle\Controller\ContentElement\TestCeModuleController:
-        tags:
-            - { name: container.service_subscriber }
-        public: true
-        # Since Symfony 5 the container has to be set manually
-        calls:
-            - [ setContainer, [ '@Psr\Container\ContainerInterface' ] ]
+    _instanceof:
+        Contao\CoreBundle\Framework\FrameworkAwareInterface:
+            calls:
+                - [setFramework, ['@contao.framework']]
 
+    contao_jobs.listener.generate_page:
+        class: ManiaxAtWork\ContaoJobsBundle\EventListener\GeneratePageListener
+        arguments:
+            - '@contao.framework'
+        tags:
+            - { name: contao.hook, hook: generatePage }
+
+    contao_jobs.listener.insert_tags:
+        class: ManiaxAtWork\ContaoJobsBundle\EventListener\InsertTagsListener
+        arguments:
+            - '@contao.framework'
+        tags:
+            - { name: contao.hook, hook: replaceInsertTags }
+
+    contao_jobs.listener.preview_url_convert:
+        class: ManiaxAtWork\ContaoJobsBundle\EventListener\PreviewUrlConvertListener
+        arguments:
+            - '@contao.framework'
+        tags:
+            - kernel.event_listener
+
+    contao_jobs.listener.preview_url_create:
+        class: ManiaxAtWork\ContaoJobsBundle\EventListener\PreviewUrlCreateListener
+        arguments:
+            - '@request_stack'
+            - '@contao.framework'
+        tags:
+            - kernel.event_listener
+
+    contao_jobs.picker.jobs_provider:
+        class: ManiaxAtWork\ContaoJobsBundle\Picker\JobsPickerProvider
+        arguments:
+            - '@knp_menu.factory'
+            - '@router'
+            - '@?translator'
+            - '@security.helper'
+        tags:
+            - { name: contao.picker_provider, priority: 128 }
